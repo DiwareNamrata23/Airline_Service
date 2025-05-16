@@ -8,9 +8,9 @@ args '-v $HOME/.m2:/root/.m2' // Mount Maven cache to speed up builds
 environment {
     APP_NAME = "airline-service"
     REMOTE_USER = "ec2-user"
-    REMOTE_HOST = "54.161.206.158" // <-- Replace this with your EC2 public IP
-    REMOTE_KEY = credentials('ec2-key') // <-- You'll add this SSH key in Jenkins
-    JAR_FILE = "target/airline-service-0.0.1-SNAPSHOT.jar"
+    REMOTE_HOST = "54.161.206.158"
+    REMOTE_KEY = credentials('ec2-key')
+    JAR_FILE = "target/airline-management-1.0-SNAPSHOT.jar"
 }
 
 stages {
